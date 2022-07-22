@@ -58,6 +58,21 @@ $router->post('/comentario',['uses' => 'ComentarioController@Insertar']);
 
 $router->delete('/comentario/{id}',['uses'=>'ComentarioController@eliminar']);
 
-//php -S localhost:8000 -t public
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+//php -S localhost:8000 -t public
+//git push origin master
+//git pull origin master
 
