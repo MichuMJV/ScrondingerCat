@@ -48,13 +48,13 @@ class SpoilerController extends Controller
             'tendencia' => $request->tendencia
         ]);
     }
-
-    public function like(Request $request){
-        $spoiler = spoiler::find($request->Idspoiler);
-        return spoiler::where('Idspoiler',$request->Idspoiler)->update([
+/*
+    public function like($id){
+        $spoiler = spoiler::find($id);
+        return spoiler::where('Idspoiler',$id)->update([
             'tendencia' => $spoiler->tendencia + 1
         ]);
-    }
+    }*/
 
     public function eliminar($id){
         return spoiler::where('Idspoiler',$id)->delete();

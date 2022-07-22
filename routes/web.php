@@ -37,7 +37,7 @@ $router->get('/spoiler/{id}',['uses'=>'SpoilerController@ObtenerSpoilerporID']);
 
 $router->post('/spoiler',['uses' => 'SpoilerController@Insertarcom']);
 
-$router->post('/spoilerlike',['uses' => 'SpoilerController@like']);
+//$router->post('/spoilerlike/{id}',['uses' => 'SpoilerController@like']);
 
 $router->post('/spoiler',['uses' => 'SpoilerController@Insertar']);
 
