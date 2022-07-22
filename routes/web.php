@@ -45,4 +45,19 @@ $router->post('/spoilerUpdate', ['uses'=>'SpoilerController@Actualizar']);
 
 $router->delete('/spoiler/{id}',['uses'=>'SpoilerController@eliminar']);
 
+
+
+
+$router->get('/comentario',['uses'=>'ComentarioController@obtenercomentario']);
+
+$router->get('/comentario/{id}',['uses'=>'ComentarioController@ObtenercomentarioporID']);
+
+//$router->post('/spoilerlike/{id}',['uses' => 'ComentarioController@like']);
+
+$router->post('/comentario',['uses' => 'ComentarioController@Insertar']);
+
+$router->delete('/comentario/{id}',['uses'=>'ComentarioController@eliminar']);
+
 //php -S localhost:8000 -t public
+
+
