@@ -15,13 +15,15 @@ class UsuariosController extends Controller
     }
 
     public function Insertar(Request $request){
-        return usuario::create([
+        $user=usuario::create([
             'ID_name' => $request->ID_name,
             'User_name' => $request->User_name,
             'correo' => $request->correo,
             'contrasena' => $request->contrasena,
             'foto' => $request->foto
         ]);
+        echo response()->json($user,200);
+        return response($user,200);
     }
 
     public function Actualizar(Request $request){
