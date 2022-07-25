@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\configstyle.css">
+    <title>Configuracion</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+    </style>
+</head>
+<body style="background: radial-gradient(50% 931.93% at 50% 62.07%, #6B5796 0%, rgba(95, 46, 200, 0.526502) 53.32%, rgba(81, 0, 255, 0) 100%)">
+    <nav id="navar">
+        <div class="imagen">
+            <img src="imagen\logo chico.png" alt="">
+            <h1 class="letra1">Scröninger’s Box</h1>
+        </div>
+        <input style="font-size: 2vh;" type="search" name="" id="buscar" placeholder="&#xf002; buscar">
+        <div id="busqueda">
+            <a class="imagen2 links" href="notification.html">
+                <img src="imagen\Vector-1.png" alt="">
+            </a>
+            <a class="imagen2 links" href="perfil.html">
+                <img src="imagen\Vector-2.png" alt="">
+            </a>
+            <a class="imagen2 links" href="boxes.html">
+                <img src="imagen\Vector-3.png" alt="">
+            </a>
+            <a class="imagen2 links" href="home.html">
+                <img src="imagen\Vector.png" alt="">
+            </a>
+            <a href="inicio de sesion.html" class="botondefault">
+                <button class="botondefault">Crear Paradoja</button>
+            </a>
+        </div>
+
+    </nav>
+    <div class="column">
+        <p class="titulo">Preferencias de cuenta</p>
+        <input type="url" id="inpututl" class="inputtext" placeholder="URL imagen de perfil">
+        <input type="text" placeholder="El_pepe" class="inputtext" id="ID_name">
+        <input type="text" placeholder="Pedro castillo" class="inputtext" id="User_name">
+        <input type="email" placeholder="Pepito@hotmail.com" class="inputtext" id="correo">
+        <input type="password" placeholder="*******" class="inputtext" id="contrasena">
+        <div style="display: flex; flex-direction:row; align-items: center;">
+            <input type="checkbox" id="vcontra">
+            <label for="vcontra" class="letra2">Ver contraseña</label>
+        </div>
+        <div style="display: flex; flex-direction:row; align-items: center;">
+            <input type="checkbox" id="ofensivo">
+            <label for="ofensivo" class="letra2">Desabilitar Lenguaje ofensivo</label>
+        </div>
+        <div style="display: flex; flex-direction:row; align-items: center;">
+            <input type="checkbox" id="comm">
+            <label for="comm" class="letra2">Mostrar Perfil en comunidades</label>
+        </div>
+        <div style="display: flex; flex-direction:row; align-items: center;">
+            <input type="checkbox" id="NSFW">
+            <label for="NSFW" class="letra2">Pornografía</label>
+        </div>
+        <div id="error"></div>
+        <div class="divboton">
+            <button class="botondefault2" type="submit" id="crearcuenta">Guardar configuracion</button>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/13f271e754.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
