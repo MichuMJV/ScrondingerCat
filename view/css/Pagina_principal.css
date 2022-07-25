@@ -47,22 +47,6 @@ body {
     gap: 1vw;
 }
 
-#buscar {
-
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-align: center;
-
-    justify-self: center;
-    height: 7vh;
-    width: 40vw;
-    background: #C4C4C4;
-    border: 1vh solid #191423;
-    border-radius: 100vh;
-
-    padding: 0%;
-}
 
 .botondefault {
     color: #C4C4C4;
