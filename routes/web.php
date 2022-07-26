@@ -19,7 +19,7 @@ $router->get('/', function () use ($router) {
 
 $router->get('/usuarios',['uses'=>'UsuariosController@obtenerusuarios']);
 
-$router->get('/usuarios/{id}',['uses'=>'UsuariosController@ObtenerUsuarioporID']);
+$router->get('/usuarios/{contra}/{correo}',['uses'=>'UsuariosController@ObtenerUsuarioporID']);
 
 $router->post('/usuarios',['uses' => 'UsuariosController@Insertar']);
 

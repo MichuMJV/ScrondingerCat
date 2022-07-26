@@ -10,8 +10,8 @@ class UsuariosController extends Controller
         return usuario::all();
     }
 
-    public function ObtenerUsuarioporID($id){
-        return usuario::find($id);
+    public function obtenerusuario($contra, $correo){
+        return usuario::select($correo)->where('contrasena', $contra)->first();
     }
 
     public function Insertar(Request $request){
